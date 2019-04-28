@@ -18,7 +18,7 @@ UEnemyAction::UEnemyAction()
 void UEnemyAction::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	// ...
 	
 }
