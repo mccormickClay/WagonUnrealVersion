@@ -78,6 +78,7 @@ DerivedDataCache/*
 
 # Dont save Startger Content
 WagonUnrealVersion/Content/StarterContent/
+WagonUnrealVersion/Content/ParagonKhaimera/
 */Build
 */Binaries
 */DerivedDataCache
