@@ -77,11 +77,10 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Dont save Startger Content
-WagonUnrealVersion/Content/StarterContent/
-WagonUnrealVersion/Content/ParagonKhaimera/
+Wagon/Content/StarterContent/
+Wagon/Content/ParagonKhaimera/
 */Build
 */Binaries
 */DerivedDataCache
 */Intermediate
 */Saved
-Wagon/Content/ParagonKhaimera/Characters/Global/Feathers/M_Global_Feathers.uasset
