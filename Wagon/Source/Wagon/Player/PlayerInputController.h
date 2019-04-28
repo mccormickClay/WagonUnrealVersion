@@ -15,6 +15,6 @@ class WAGON_API APlayerInputController : public APlayerController
 	
 
 public:
-	void SetupInput();
-	void Pressed_A();
+	//void SetupInput();
+	//void Pressed_A();
 };

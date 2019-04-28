@@ -4,7 +4,7 @@
 #include "PlayerInputController.h"
 #include "Components/InputComponent.h"
 
-void APlayerInputController::SetupInput()
+/*void APlayerInputController::SetupInput()
 {
 	EnableInput(this);
 	check(InputComponent);
@@ -14,4 +14,4 @@ void APlayerInputController::SetupInput()
 void APlayerInputController::Pressed_A()
 {
 	UE_LOG(LogTemp, Warning, TEXT("A is being clicked!"));
-}
+}*/
