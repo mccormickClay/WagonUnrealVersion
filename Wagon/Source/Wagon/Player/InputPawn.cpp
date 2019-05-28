@@ -6,6 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "EngineUtils.h"
 #include "Enemy/EnemyAction.h"
+#include "Movesets/AttackCommand.h"
 
 // Sets default values
 AInputPawn::AInputPawn()
@@ -20,6 +21,8 @@ AInputPawn::AInputPawn()
 
 	OurVisableComponent->SetupAttachment(RootComponent);
 
+	atkCmd = new AttackCommand();
+
 }
 
 // Called when the game starts or when spawned
@@ -33,7 +36,7 @@ void AInputPawn::BeginPlay()
 	{
 		// Same as with the Object Iterator, access the subclass instance with the * or -> operators.
 		APawn *Pawn = *ActorItr;
-		UEnemyAction* enemyAction = Pawn->FindComponentByClass<UEnemyAction>();
+		enemyAction = Pawn->FindComponentByClass<UEnemyAction>();
 		if (enemyAction != nullptr)
 		{
 			enemy = Pawn;
@@ -63,6 +66,7 @@ void AInputPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 void AInputPawn::Pressed_W()
 {
 	UE_LOG(LogTemp, Warning, TEXT("W is being clicked!"));
+	atkCmd->Attack(enemyAction);
 }
 
 void AInputPawn::Pressed_A()

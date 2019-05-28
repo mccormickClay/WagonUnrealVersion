@@ -26,6 +26,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Animation Functions")
 	void Damage();
+	void Attack();
 		
 private:
 	int Health;

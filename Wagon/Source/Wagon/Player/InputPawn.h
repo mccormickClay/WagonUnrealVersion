@@ -6,6 +6,9 @@
 #include "GameFramework/Pawn.h"
 #include "InputPawn.generated.h"
 
+class UEnemyAction;
+class AttackCommand;
+
 UCLASS()
 class WAGON_API AInputPawn : public APawn
 {
@@ -34,4 +37,6 @@ public:
 
 private:
 	APawn* enemy;
+	UEnemyAction* enemyAction;
+	AttackCommand* atkCmd;
 };

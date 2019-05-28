@@ -36,6 +36,10 @@ void UEnemyAction::Damage()
 {
 	int _damage = 1;
 	Health -= _damage;
-	UE_LOG(LogTemp, Warning, TEXT("MyCharacter's Health is %d"), Health);
+	UE_LOG(LogTemp, Warning, TEXT("Enemy's Health is %d"), Health);
 }
 
+void UEnemyAction::Attack()
+{
+
+}
